@@ -1,0 +1,47 @@
+6/15/2017
+
+- Added functionality to properly open a site and check if it's connected to any of it's neighbors
+    => added checkNeighbor* that checks for open sites around the current site, if it's open it is added to that
+    component
+- Added isOpen, simple testing for equality method
+- Added main method for testing
+- Updated theUnion argument of ints on initialization to be n*n instead of n because its initializing the amount of
+    the board
+- Updated grid to initialize to the n amount of rows and columns passed through the Percolation object
+
+6/16/2017
+- Added percolates function... i think
+- PercolationVisualizer should work but reports "DOES NOT PERCOLATE"
+
+6/17/2017
+- Completed changed percolates function, correctly reports percolation or no percolation
+ ==> The percolation method takes each site of the bottom row and checks connection with the entire top row,
+     if any of the bottom sites are connected with any of the top sites the system percolates
+- Added indexChecking method, if a column or row given is below or above the parameters //TODO will throw an exception
+- Updated checkNeighbor method to not check out of the bounds of a column or row not initialized with a character
+- Updated isFull to check if the current site is connected to any of the top row and if the site isOpen, the site isFull
+- Updated open to check index before opening
+- Updated the grid to be initialized to 2 above it's given rows, I'm still not 100% sure about this but I believe 0
+counts as a row, so im skipping 0 and i need to add an extra row... i think, so there's technically 6 rows
+    i.e.  0 1 2 3 4
+        0 X X X X X
+        1 X
+        2   X
+        3    X
+        4      X  X
+        5
+throughout the program we ignore the 0 row, which really sucks because all of programming revolves around the 0 index,
+this has been the most difficult for me to visualize everything so far.
+
+6/18/2017
+- Added PercolationStats class
+- Percolation Stats is a virtual testing program of Percolation
+- My main trouble was generating the correct random numbers, I tried to convert a 1D number to a 2d (row, col) always
+ giving me a 0 for one or the other, next was remembering to reset the percolation object after a system had percolated,
+ finally getting the right sample for the total amount of sites opened/total amount of sites for the array (I also
+ had a hard time figuring out we had to use an array, I didn't understand how to calculate the mean or stddev,
+ luckily the API for the two functions tells you it takes in an array of doubles so this was a useful hint)
+ -- //TODO add more detailed notes
+
+ 6/19/2017
+ - Updated the bottom virtual site to be 0 instead of n*n, suddenly jumped to 99 tests passed! Woo!

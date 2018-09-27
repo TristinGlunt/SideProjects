@@ -1,0 +1,105 @@
+Normalizing all inputs: False
+Learning rate: 0.0001 minibatch size: 6
+W1 shape: (32, 10)
+W2 shape: (24, 32)
+W3 shape: (12, 24)
+W4 shape: (1, 12)
+Cost after epoch 0: 0.696980
+Cost after epoch 100: 0.471371
+Cost after epoch 200: 0.426738
+Cost after epoch 300: 0.426083
+Cost after epoch 400: 0.420816
+Cost after epoch 500: 0.434682
+Cost after epoch 600: 0.406249
+Cost after epoch 700: 0.416527
+Cost after epoch 800: 0.379736
+Cost after epoch 900: 0.390030
+Parameters have been trained!
+X_test Accuracy: 0.84....
+TestData: 79.45 % accuracy
+
+Normalizing all inputs: True
+Learning rate: 0.0001 minibatch size: 6
+W1 shape: (32, 10)
+W2 shape: (24, 32)
+W3 shape: (12, 24)
+W4 shape: (1, 12)
+Cost after epoch 0: 0.665336
+Cost after epoch 100: 0.443558
+Cost after epoch 200: 0.422151
+Cost after epoch 300: 0.442942
+Cost after epoch 400: 0.422287
+Cost after epoch 500: 0.413599
+Cost after epoch 600: 0.403654
+Cost after epoch 700: 0.405663
+Cost after epoch 800: 0.407951
+Cost after epoch 900: 0.386952
+Parameters have been trained!
+X_test Accuracy: 0.8044692737430168
+
+Normalizing all inputs: True
+Learning rate: 0.0001 minibatch size: 6
+W1 shape: (48, 10)
+W2 shape: (32, 48)
+W3 shape: (12, 32)
+W4 shape: (1, 12)
+Cost after epoch 0: 0.713809
+Cost after epoch 100: 0.445766
+Cost after epoch 200: 0.423045
+Cost after epoch 300: 0.409394
+Cost after epoch 400: 0.401683
+Cost after epoch 500: 0.396596
+Cost after epoch 600: 0.385230
+Cost after epoch 700: 0.377372
+Cost after epoch 800: 0.384468
+Cost after epoch 900: 0.376807
+Parameters have been trained!
+X_test Accuracy: 0.8044692737430168
+
+Normalizing all inputs: False
+Learning rate: 0.0001 minibatch size: 6
+W1 shape: (24, 10)
+W2 shape: (12, 24)
+W3 shape: (6, 12)
+W4 shape: (1, 6)
+Cost after epoch 0: 0.682193
+Cost after epoch 100: 0.454772
+Cost after epoch 200: 0.430155
+Cost after epoch 300: 0.429396
+Cost after epoch 400: 0.409364
+Cost after epoch 500: 0.404995
+Cost after epoch 600: 0.406034
+Cost after epoch 700: 0.393310
+Cost after epoch 800: 0.389887
+Cost after epoch 900: 0.371053
+Parameters have been trained!
+X_test Accuracy: 0.8100558659217877
+
+Normalizing all inputs: False
+Learning rate: 0.0001 minibatch size: 6
+W1 shape: (24, 10)
+W2 shape: (12, 24)
+W3 shape: (6, 12)
+W4 shape: (1, 6)
+Cost after epoch 0: 0.711544
+Cost after epoch 100: 0.451868
+Cost after epoch 200: 0.423058
+Cost after epoch 300: 0.403802
+Cost after epoch 400: 0.405836
+Cost after epoch 500: 0.400140
+Cost after epoch 600: 0.389680
+Cost after epoch 700: 0.390798
+Cost after epoch 800: 0.413317
+Cost after epoch 900: 0.382768
+Cost after epoch 1000: 0.375679
+Cost after epoch 1100: 0.374356
+Cost after epoch 1200: 0.378519
+Cost after epoch 1300: 0.371826
+Cost after epoch 1400: 0.358906
+Cost after epoch 1500: 0.367122
+Cost after epoch 1600: 0.372026
+Cost after epoch 1700: 0.362768
+Cost after epoch 1800: 0.369055
+Cost after epoch 1900: 0.362550
+Parameters have been trained!
+X_test Accuracy: 0.8156424581005587

@@ -7,7 +7,7 @@ class Pipe(pygame.sprite.Sprite):
         self.x = x
         self.height = height
         ranNum = random.uniform(0.1, 0.9)
-        space = 100 #100 * ranNum
+        space = 75 #100 * ranNum
         self.topY = 300 * ranNum
         self.bottomY = self.topY + space
         self._lessThanX = False
@@ -43,6 +43,10 @@ class Pipe(pygame.sprite.Sprite):
         del self._lessThanX
 
     def hits(self, bird):
-        if(bird.rect.y < self.topY or bird.rect.y > self.bottomY):
+        # adding/subtracting 3 because of flappy birds shape
+        if(((bird.rect.top+5) < self.topY) or ((bird.rect.bottom-5) > self.bottomY)):
             if(bird.rect.x > self.x and bird.rect.x < self.x + 50): #TODO UPDATE WITH PARAM
                 return True
+        # not a hit on a pipe, but the bottom of the scree... just doing all hit detection here
+        if(bird.rect.bottom > self.height or bird.rect.bottom == self.height or (bird.rect.top == 0 or bird.rect.top < 0)):
+            return True

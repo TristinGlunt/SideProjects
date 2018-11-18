@@ -35,7 +35,7 @@ class Bird(pygame.sprite.Sprite):
         self.rect.center = (100, height/2) #starts bird at 0 x coordinate and middle of screen
         self.WINDOW_HEIGHT = height
         self.y_before_jump = 35 # max
-        self.score = 0
+        self.score = 0 # the min. score (not getting through first pipe)
         self.fitness = 0
         self.velocity = 0
 

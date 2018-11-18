@@ -90,7 +90,7 @@ class NeuralNetwork(object):
 
                     row_idx = random.randint(0, shape_of_current_weight_layer[0]-1)
                     col_idx = random.randint(0, shape_of_current_weight_layer[1]-1)
-                    random_mutation = random.uniform(-0.01*learning_rate, 0.01*learning_rate)
+                    random_mutation = random.uniform(-0.2*learning_rate, 0.2*learning_rate)
                     # print(str(row_idx) + " " + str(col_idx))
                     # flip sign of that weight
                     self.parameters["W" + str(i+1)][row_idx][col_idx] += random_mutation

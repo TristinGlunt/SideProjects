@@ -8,6 +8,7 @@ from collections import Counter
 WINDOW_HEIGHT = 400
 save = True
 
+
 def nextGeneration(totalBirds, birds):
     # in place update of all the birds fitness values, also return max and min fitness
     max_score, min_score = calculate_fitness(birds)
@@ -25,6 +26,7 @@ def nextGeneration(totalBirds, birds):
 
     return newBirds
 
+
 def pickOneBird(mating_pool):
     bird = random.choice(mating_pool)
     # mutation the birds brain a bit (flipping signs of weights randomly)
@@ -41,6 +43,8 @@ def pickOneBird(mating_pool):
     return newBird
 
 # in place function to mutate birds fitness values
+
+
 def calculate_fitness(birds):
 
     max_score = -9999999
@@ -77,6 +81,7 @@ def calculate_fitness(birds):
     print("Min score of generation: " + str(min_score))
     return max_score, min_score
 
+
 """
 @generate_mating_pool: Based on the current fitness out of the maximum fitness, we will add
 that entity to the mating pool that number of times.
@@ -84,10 +89,11 @@ EX: Fitness score = 15, maxFitness = 60, normalized_fitness = 0.25, 0.25 * 100 =
 there will be 25 adds of this entity. Therefore, the higher the fitness score, the more
 likely that entity is to be a parent
 """
+
+
 def generate_mating_pool(population, max_score, min_score):
 
     mating_pool = []
-
 
     # calculate max fitness in population
     maxFitness = max_score
@@ -120,8 +126,8 @@ def generate_mating_pool(population, max_score, min_score):
         for j in range(num_times_to_add):
             mating_pool.append(population[i])
 
-
     return mating_pool
+
 
 def generate_next_generation(birds):
 

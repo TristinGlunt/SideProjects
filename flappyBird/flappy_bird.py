@@ -45,7 +45,7 @@ all_sprites = pygame.sprite.Group()
 #flappy-bird specific
 #TODO: load in best bird as option
 slider = slider_module.Slider("Speed", 1, 20, 1, 25)
-totalBirds = 500
+totalBirds = 1
 birds = []
 savedBirds = []
 score = 0
